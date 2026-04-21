@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
 
   const links = [
     { name: 'Properties', href: '#properties' },

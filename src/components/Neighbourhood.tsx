@@ -29,7 +29,6 @@ export function Neighbourhood() {
               height={500} 
               defaultCenter={center} 
               defaultZoom={14}
-              mouseWheel={false}
             >
               <ZoomControl />
               <Marker width={50} anchor={center} color="rgba(201, 169, 110, 1)" />

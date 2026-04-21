@@ -1,4 +1,4 @@
-import React, { ComponentPropsWithoutRef, useRef } from 'react';
+import React, { type ComponentPropsWithoutRef, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
 interface MarqueeProps extends ComponentPropsWithoutRef<'div'> {

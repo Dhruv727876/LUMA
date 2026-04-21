@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, HTMLAttributes } from 'react';
+import React, { useState, useEffect, useRef, type HTMLAttributes } from 'react';
 import { useScroll, useSpring } from 'framer-motion';
 import { cn } from "@/lib/utils";
 

@@ -23,6 +23,11 @@ interface CosmicParallaxBgProps {
    * @default true
    */
   showContent?: boolean;
+  
+  /**
+   * Additional CSS classes
+   */
+  className?: string;
 }
 
 /**
