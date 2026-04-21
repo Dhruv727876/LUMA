@@ -3,22 +3,23 @@ import { siteConfig } from '@/config/site';
 
 export function Hero() {
   return (
-    <section className="relative w-full h-[85vh] min-h-[600px] overflow-hidden flex items-center justify-center">
+    <section className="relative w-full h-[85vh] min-h-[600px] overflow-hidden flex items-center justify-center bg-[#0A0A0A]">
       <motion.video
         autoPlay
         muted
         loop
         playsInline
+        poster={`${import.meta.env.BASE_URL}hero_image.jpg`}
         initial={{ scale: 1.08 }}
         animate={{ scale: 1.0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/Modern_villa_cropped.mp4" type="video/mp4" />
+        <source src={`${import.meta.env.BASE_URL}Modern_villa_cropped.mp4`} type="video/mp4" />
       </motion.video>
 
       {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[rgba(0,0,0,0.65)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[rgba(0,0,0,0.7)]" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-[1440px] px-6 md:px-16 mt-32 flex flex-col items-start text-left">
